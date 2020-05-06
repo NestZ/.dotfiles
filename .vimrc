@@ -13,7 +13,7 @@
 
 call plug#begin()
 
-Plug 'preservim/nerdtree'
+Plug 'scrooloose/nerdtree'
 Plug 'sainnhe/sonokai'
 Plug 'sheerun/vim-polyglot'
 Plug 'airblade/vim-gitgutter'
@@ -24,6 +24,7 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'preservim/nerdcommenter'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'leafgarland/typescript-vim'
+Plug 'ryanoasis/vim-devicons'
 
 call plug#end()
 
@@ -89,6 +90,7 @@ let g:gitgutter_enabled = 1
 " Allow backspacing over everything in insert mode.
 :set guicursor=
 :set relativenumber
+set encoding=UTF-8
 set backspace=indent,eol,start
 set history=200		" keep 200 lines of command line history
 set ruler		" show the cursor position all the time
