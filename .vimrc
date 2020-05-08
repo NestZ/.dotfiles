@@ -13,7 +13,6 @@
 
 call plug#begin()
 
-"Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'scrooloose/nerdtree'
 Plug 'sainnhe/sonokai'
 Plug 'sheerun/vim-polyglot'
@@ -96,11 +95,27 @@ let g:ctrlp_match_window = 'results:100' " overcome limit imposed by max height
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
+
+""""""""""""""""""""""""""ale""""""""""""""""""""""""""""""""
+
+let g:ale_fix_on_save = 1
+
+let g:ale_linters = {
+  \ 'javascript': ['eslint'],
+  \ 'typescript': ['eslint'],
+  \ 'json': ['jsonlint']
+  \ }
+
+let g:ale_fixers = {
+  \ 'javascript': ['prettier'],
+  \ 'typescript': ['prettier'],
+  \ 'json': ['fixjson']
+  \ }
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
 """""""""""""""""""""""Set Up""""""""""""""""""""""""""""""""
-"let g:ale_fixers = ['prettier', 'eslint']
-"let g:ale_fix_on_save = 1
-"let g:ale_set_highlights = 0
-"let g:ale_set_signs = 0
 
 " Allow backspacing over everything in insert mode.
 set signcolumn=yes
