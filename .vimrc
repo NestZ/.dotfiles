@@ -13,6 +13,7 @@
 
 call plug#begin()
 
+"Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'scrooloose/nerdtree'
 Plug 'sainnhe/sonokai'
 Plug 'sheerun/vim-polyglot'
@@ -24,9 +25,11 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'preservim/nerdcommenter'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'leafgarland/typescript-vim'
+Plug 'dense-analysis/ale'
 Plug 'ryanoasis/vim-devicons'
 
 call plug#end()
+
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
@@ -75,6 +78,7 @@ map <C-_> <plug>NERDCommenterToggle
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+
 """"""""""""""""""""GitGutter Config"""""""""""""""""""""""""
 
 highlight GitGutterAdd guifg=#009900 ctermfg=Green
@@ -85,12 +89,24 @@ let g:gitgutter_enabled = 1
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
+"""""""""""""""""""""""""Ctrl-P""""""""""""""""""""""""""""""
+
+let g:ctrlp_match_window = 'results:100' " overcome limit imposed by max height
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
 """""""""""""""""""""""Set Up""""""""""""""""""""""""""""""""
+"let g:ale_fixers = ['prettier', 'eslint']
+"let g:ale_fix_on_save = 1
+"let g:ale_set_highlights = 0
+"let g:ale_set_signs = 0
 
 " Allow backspacing over everything in insert mode.
-:set guicursor=
-:set relativenumber
-set encoding=UTF-8
+set signcolumn=yes
+set noswapfile
+set guicursor=
+set relativenumber
 set backspace=indent,eol,start
 set history=200		" keep 200 lines of command line history
 set ruler		" show the cursor position all the time
