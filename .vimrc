@@ -14,7 +14,6 @@
 call plug#begin()
 
 Plug 'scrooloose/nerdtree'
-"Plug 'sainnhe/sonokai'
 Plug 'morhetz/gruvbox'
 Plug 'sheerun/vim-polyglot'
 Plug 'airblade/vim-gitgutter'
