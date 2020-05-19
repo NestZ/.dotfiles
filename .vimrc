@@ -14,7 +14,8 @@
 call plug#begin()
 
 Plug 'scrooloose/nerdtree'
-Plug 'sainnhe/sonokai'
+"Plug 'sainnhe/sonokai'
+Plug 'morhetz/gruvbox'
 Plug 'sheerun/vim-polyglot'
 Plug 'airblade/vim-gitgutter'
 Plug 'kien/ctrlp.vim'
@@ -139,13 +140,12 @@ set laststatus=2
 
 """"""""""""""""""""""""Theme""""""""""""""""""""""""""""""""
 
-let g:sonokai_enable_italic = 0
-let g:sonokai_disable_italic_comment = 1
-let g:sonokai_style = 'shusia'
+"let g:sonokai_enable_italic = 0
+"let g:sonokai_disable_italic_comment = 1
+"let g:sonokai_style = 'shusia'
 " {maia, atlantis, shusia, andromeda}
-"syntax on
-"set background=dark
-colorscheme sonokai
+colorscheme gruvbox
+set background=dark
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
