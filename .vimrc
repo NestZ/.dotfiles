@@ -78,16 +78,6 @@ map <C-_> <plug>NERDCommenterToggle
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
-""""""""""""""""""""GitGutter Config"""""""""""""""""""""""""
-
-highlight GitGutterAdd guifg=#009900 ctermfg=Green
-highlight GitGutterChange guifg=#bbbb00 ctermfg=Yellow
-highlight GitGutterDelete guifg=#ff2222 ctermfg=Red
-let g:gitgutter_enabled = 1
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-
 """""""""""""""""""""""""Ctrl-P""""""""""""""""""""""""""""""
 
 let g:ctrlp_match_window = 'results:100' " overcome limit imposed by max height
@@ -149,9 +139,16 @@ set background=dark
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
+""""""""""""""""""""GitGutter Config"""""""""""""""""""""""""
+
+let g:gitgutter_enabled = 1
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
 """"""""""""""""""""""""Air line"""""""""""""""""""""""""""""
 
-let g:airline_theme='bubblegum'
+let g:airline_theme='gruvbox'
 let g:airline_powerline_fonts = 1
 let g:airline_section_warning = ''
 filetype plugin on
