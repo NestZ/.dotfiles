@@ -65,7 +65,9 @@ map <C-n> :NERDTreeToggle<CR>
 nnoremap <F8> :!g++ -o  %:r.out % -std=c++17 -Wshadow -Wall -O2 -Wno-unused-result<CR>
 nnoremap <F9> :!g++ -o  %:r.out % -std=c++17 -Wshadow -Wall -g -fsanitize=address -fsanitize=undefined -D_GLIBCXX_DEBUG<CR>
 nnoremap <F5> :!./%:r.out<CR>
-map <C-_> <plug>NERDCommenterToggle
+map <C-c> <plug>NERDCommenterToggle
+vnoremap J :m '>+1<CR>gv=gv
+vnoremap K :m '<-2<CR>gv=gv
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
