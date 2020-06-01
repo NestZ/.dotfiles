@@ -1,0 +1,4 @@
+{
+	"coc.preferences.formatOnSaveFiletypes": ["css", "markdown"],
+	"suggest.maxCompleteItemCount": 20
+}

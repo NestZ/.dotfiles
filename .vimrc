@@ -262,6 +262,18 @@ endif
 
 """""""""""""""""""""""""""""""""""""Coc"""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+let g:coc_global_extensions = [
+	\ 'coc-tsserver',
+	\ 'coc-eslint',
+	\ 'coc-prettier',
+	\ 'coc-json',
+	\ 'coc-yaml',
+	\ 'coc-html',
+	\ 'coc-python',
+	\ 'coc-java',
+	\ 'coc-css',
+	\ ]
+
 " TextEdit might fail if hidden is not set.
 set hidden
 
