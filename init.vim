@@ -125,6 +125,7 @@ set wrap
 set termguicolors
 set cursorline
 set laststatus=2
+set guicursor=a:blinkon100
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
