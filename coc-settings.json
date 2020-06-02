@@ -1,5 +1,5 @@
 {
-	"coc.preferences.formatOnSaveFiletypes": ["css", "markdown"],
+	"coc.preferences.formatOnSaveFiletypes": ["typescript", "javascript"],
 	"suggest.maxCompleteItemCount": 20,
 	"git.addedSign.hlGroup": "GitGutterAdd",
 	"git.changedSign.hlGroup": "GitGutterChange",
