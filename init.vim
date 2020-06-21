@@ -99,7 +99,6 @@ let NERDTreeIgnore = ['^node_modules$', '^.git$']
 
 """""""""""""""""""""""Set Up""""""""""""""""""""""""""""""""
 
-" Allow backspacing over everything in insert mode.
 set signcolumn=yes
 set noswapfile
 set guicursor=
@@ -121,8 +120,8 @@ set novisualbell
 set encoding=utf8
 set ai
 set si
-set shiftwidth=4
-set tabstop=4
+set shiftwidth=2
+set tabstop=2
 set smarttab
 set wrap
 set termguicolors
@@ -135,10 +134,6 @@ set guicursor=a:blinkon100
 
 """"""""""""""""""""""""Theme""""""""""""""""""""""""""""""""
 
-"let g:sonokai_enable_italic = 0
-"let g:sonokai_disable_italic_comment = 1
-"let g:sonokai_style = 'shusia'
-" {maia, atlantis, shusia, andromeda}
 colorscheme gruvbox
 set background=dark
 
