@@ -94,9 +94,6 @@ let g:plug_window = 'noautocmd vertical topleft new'
 let NERDTreeShowHidden = 1
 let NERDTreeIgnore = ['^node_modules$', '^.git$']
 
-" If more than one window and previous buffer was NERDTree, go back to it.
-autocmd BufEnter * if bufname('#') =~# "^NERD_tree_" && winnr('$') > 1 | b# | endif
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
