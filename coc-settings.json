@@ -1,5 +1,5 @@
 {
-	"coc.preferences.formatOnSaveFiletypes": ["typescript", "javascript"],
+	"coc.preferences.formatOnSaveFiletypes": ["typescript", "javascript", "yaml", "typescriptreact", "javascriptreact"],
 	"suggest.maxCompleteItemCount": 20,
 	"git.addedSign.hlGroup": "GitGutterAdd",
 	"git.changedSign.hlGroup": "GitGutterChange",
