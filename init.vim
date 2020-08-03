@@ -17,7 +17,8 @@ Plug 'scrooloose/nerdtree'
 Plug 'morhetz/gruvbox'
 Plug 'sheerun/vim-polyglot'
 Plug 'airblade/vim-gitgutter'
-Plug 'kien/ctrlp.vim'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'christoomey/vim-tmux-navigator'
@@ -66,6 +67,7 @@ map <C-n> :NERDTreeToggle<CR>
 nnoremap <F8> :!g++ -o  %:r.out % -std=c++17 -Wshadow -Wall -O2 -Wno-unused-result<CR>
 nnoremap <F9> :!g++ -o  %:r.out % -std=c++17 -Wshadow -Wall -g -fsanitize=address -fsanitize=undefined -D_GLIBCXX_DEBUG<CR>
 nnoremap <F5> :!./%:r.out<CR>
+nnoremap <C-p> :Files<CR>
 map <C-c> <plug>NERDCommenterToggle
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
@@ -77,13 +79,6 @@ vnoremap K :m '<-2<CR>gv=gv
 
 :command Ca !cat % | clip.exe
 :command Clr !clear
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-
-"""""""""""""""""""""""""Ctrl-P""""""""""""""""""""""""""""""
-
-let g:ctrlp_match_window = 'results:100' " overcome limit imposed by max height
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
@@ -137,6 +132,7 @@ set guicursor=a:blinkon100
 
 colorscheme gruvbox
 set background=dark
+let g:gruvbox_invert_selection='0'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
@@ -154,6 +150,14 @@ let g:airline_theme='gruvbox'
 let g:airline_powerline_fonts = 1
 let g:airline_section_warning = ''
 filetype plugin on
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+""""""""""""""""""""""""""fzf""""""""""""""""""""""""""""""""
+
+let g:fzf_layout = { 'window': { 'width': 0.8, 'height': 0.8 } }
+let $FZF_DEFAULT_OPTS='--reverse'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
