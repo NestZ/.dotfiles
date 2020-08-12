@@ -26,8 +26,8 @@ Plug 'preservim/nerdcommenter'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'leafgarland/typescript-vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'ryanoasis/vim-devicons'
 Plug 'Yggdroot/indentLine'
+Plug 'ryanoasis/vim-devicons'
 
 call plug#end()
 
@@ -156,7 +156,7 @@ filetype plugin on
 
 """"""""""""""""""""""""""fzf""""""""""""""""""""""""""""""""
 
-let g:fzf_layout = { 'window': { 'width': 0.8, 'height': 0.8 } }
+let g:fzf_layout = { 'window': { 'width': 0.7, 'height': 0.7 } }
 let $FZF_DEFAULT_OPTS='--reverse'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
