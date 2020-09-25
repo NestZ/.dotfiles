@@ -53,7 +53,7 @@ vnoremap K :m '<-2<CR>gv=gv
 
 """""""""""""""""""Command Mapping"""""""""""""""""""""""""""
 
-:command Ca !cat % | clip.exe
+:command Ca !cat % | xclip -i -selection clipboard
 :command Clr !clear
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
