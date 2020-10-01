@@ -97,4 +97,4 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias kubectl="microk8s kubectl"
+alias kubectl="sudo microk8s kubectl"
