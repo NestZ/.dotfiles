@@ -2,7 +2,6 @@
   "coc.preferences.formatOnSaveFiletypes": [
     "typescript",
     "javascript",
-    "yaml",
     "typescriptreact",
     "javascriptreact",
     "json",
@@ -13,5 +12,6 @@
   "git.changedSign.hlGroup": "GitGutterChange",
   "git.removedSign.hlGroup": "GitGutterDelete",
   "git.topRemovedSign.hlGroup": "GitGutterDelete",
-  "git.changeRemovedSign.hlGroup": "GitGutterChangeDelete"
+  "git.changeRemovedSign.hlGroup": "GitGutterChangeDelete",
+  "python.formatting.provider": "autopep8"
 }

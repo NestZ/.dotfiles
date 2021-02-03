@@ -100,7 +100,7 @@ set termguicolors
 set cursorline
 set laststatus=2
 set guicursor=a:blinkon100
-set ttimeout		" time out for key codes
+set ttimeout
 set ttimeoutlen=100	" wait up to 100ms after Esc for special key
 set noshowmode
 
