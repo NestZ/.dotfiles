@@ -41,7 +41,7 @@ call plug#end()
 :imap ii <Esc>
 map <C-n> :NERDTreeToggle<CR>
 nnoremap <F8> :!g++ -o  %:r.out % -std=c++17 -Wshadow -Wall -O2 -Wno-unused-result<CR>
-nnoremap <F9> :!g++ -o  %:r.out % -std=c++17 -Wshadow -Wall -g -fsanitize=address -fsanitize=undefined -D_GLIBCXX_DEBUG<CR>
+nnoremap <F9> :!g++ -o  %:r.out % -std=c++17 -Wshadow -Wall -g -fsanitize=address -fsanitize=undefined -D_GLIBCXX_DEBUG -DLOCAL<CR>
 nnoremap <F5> :!./%:r.out<CR>
 nnoremap <C-p> :Files<CR>
 map <C-c> <plug>NERDCommenterToggle
